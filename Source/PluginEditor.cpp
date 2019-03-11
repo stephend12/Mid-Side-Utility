@@ -35,28 +35,28 @@ MidSideUtilityAudioProcessorEditor::MidSideUtilityAudioProcessorEditor (MidSideU
 
     InputGainSlider.reset (new Slider ("Input Gain Slider"));
     addAndMakeVisible (InputGainSlider.get());
-    InputGainSlider->setRange (0, 2, 0);
+    InputGainSlider->setRange (0, 2, 0.1);
     InputGainSlider->setSliderStyle (Slider::Rotary);
     InputGainSlider->setTextBoxStyle (Slider::TextBoxBelow, false, 80, 20);
     InputGainSlider->addListener (this);
 
     Left_MidPanSlider.reset (new Slider ("Left/Mid Pan Slider"));
     addAndMakeVisible (Left_MidPanSlider.get());
-    Left_MidPanSlider->setRange (0, 1, 0);
+    Left_MidPanSlider->setRange (0, 1, 0.1);
     Left_MidPanSlider->setSliderStyle (Slider::Rotary);
     Left_MidPanSlider->setTextBoxStyle (Slider::TextBoxBelow, false, 80, 20);
     Left_MidPanSlider->addListener (this);
 
     Right_SidePanSlider.reset (new Slider ("Right/Side Pan Slider"));
     addAndMakeVisible (Right_SidePanSlider.get());
-    Right_SidePanSlider->setRange (0, 1, 0);
+    Right_SidePanSlider->setRange (0, 1, 0.1);
     Right_SidePanSlider->setSliderStyle (Slider::Rotary);
     Right_SidePanSlider->setTextBoxStyle (Slider::TextBoxBelow, false, 80, 20);
     Right_SidePanSlider->addListener (this);
 
     StereoWidthSlider.reset (new Slider ("Stereo Width Slider"));
     addAndMakeVisible (StereoWidthSlider.get());
-    StereoWidthSlider->setRange (0, 2, 0);
+    StereoWidthSlider->setRange (0, 2, 0.1);
     StereoWidthSlider->setSliderStyle (Slider::Rotary);
     StereoWidthSlider->setTextBoxStyle (Slider::TextBoxBelow, false, 80, 20);
     StereoWidthSlider->addListener (this);
@@ -289,22 +289,22 @@ BEGIN_JUCER_METADATA
   <BACKGROUND backgroundColour="ff323e44"/>
   <SLIDER name="Input Gain Slider" id="498de5430f2986bc" memberName="InputGainSlider"
           virtualName="" explicitFocusOrder="0" pos="0 24 25% 25%" min="0.0"
-          max="2.0" int="0.0" style="Rotary" textBoxPos="TextBoxBelow"
+          max="2.0" int="0.10000000000000000555" style="Rotary" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="80" textBoxHeight="20" skewFactor="1.0"
           needsCallback="1"/>
   <SLIDER name="Left/Mid Pan Slider" id="f9bbb89646c32b71" memberName="Left_MidPanSlider"
           virtualName="" explicitFocusOrder="0" pos="160 208 25% 25%" min="0.0"
-          max="1.0" int="0.0" style="Rotary" textBoxPos="TextBoxBelow"
+          max="1.0" int="0.10000000000000000555" style="Rotary" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="80" textBoxHeight="20" skewFactor="1.0"
           needsCallback="1"/>
   <SLIDER name="Right/Side Pan Slider" id="58814b02cf0f3689" memberName="Right_SidePanSlider"
           virtualName="" explicitFocusOrder="0" pos="320 208 25% 25%" min="0.0"
-          max="1.0" int="0.0" style="Rotary" textBoxPos="TextBoxBelow"
+          max="1.0" int="0.10000000000000000555" style="Rotary" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="80" textBoxHeight="20" skewFactor="1.0"
           needsCallback="1"/>
   <SLIDER name="Stereo Width Slider" id="c6afc40587b4bada" memberName="StereoWidthSlider"
           virtualName="" explicitFocusOrder="0" pos="448 24 25% 25%" min="0.0"
-          max="2.0" int="0.0" style="Rotary" textBoxPos="TextBoxBelow"
+          max="2.0" int="0.10000000000000000555" style="Rotary" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="80" textBoxHeight="20" skewFactor="1.0"
           needsCallback="1"/>
   <LABEL name="Input Gain Label" id="963a86f442baf744" memberName="InputGainLabel"
