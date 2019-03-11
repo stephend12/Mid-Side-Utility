@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="bTbAIZ" name="Mid Side Utility" projectType="audioplug" jucerVersion="5.4.1">
+<JUCERPROJECT id="bTbAIZ" name="Mid Side Utility" projectType="audioplug" jucerVersion="5.4.1"
+              companyName="GCUAudio" companyCopyright="Stephen Delaney" companyEmail="sdelan200@caledonian.ac.uk"
+              pluginFormats="buildVST3" pluginVST3Category="Tools">
   <MAINGROUP id="U6wfBX" name="Mid Side Utility">
     <GROUP id="{FA401FBA-BD2D-0A66-6FCA-496822E380E0}" name="Source">
       <FILE id="P9Iopk" name="PluginProcessor.cpp" compile="1" resource="0"
