@@ -204,6 +204,7 @@ void MidSideUtilityAudioProcessorEditor::sliderValueChanged (Slider* sliderThatW
     if (sliderThatWasMoved == InputGainSlider.get())
     {
         //[UserSliderCode_InputGainSlider] -- add your slider handling code here..
+
         //[/UserSliderCode_InputGainSlider]
     }
     else if (sliderThatWasMoved == Left_MidPanSlider.get())
