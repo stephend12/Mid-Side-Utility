@@ -204,23 +204,26 @@ void MidSideUtilityAudioProcessorEditor::sliderValueChanged (Slider* sliderThatW
     if (sliderThatWasMoved == InputGainSlider.get())
     {
         //[UserSliderCode_InputGainSlider] -- add your slider handling code here..
-
+		processor.InputGain = InputGainSlider->getValue(); //assign value of slider
         //[/UserSliderCode_InputGainSlider]
     }
     else if (sliderThatWasMoved == Left_MidPanSlider.get())
     {
         //[UserSliderCode_Left_MidPanSlider] -- add your slider handling code here..
-        //[/UserSliderCode_Left_MidPanSlider]
+		processor.Left_MidPan = Left_MidPanSlider->getValue(); //assign value of slider
+		//[/UserSliderCode_Left_MidPanSlider]
     }
     else if (sliderThatWasMoved == Right_SidePanSlider.get())
     {
         //[UserSliderCode_Right_SidePanSlider] -- add your slider handling code here..
-        //[/UserSliderCode_Right_SidePanSlider]
+		processor.Right_SidePan = Right_SidePanSlider->getValue(); //assign value of slider
+		//[/UserSliderCode_Right_SidePanSlider]
     }
     else if (sliderThatWasMoved == StereoWidthSlider.get())
     {
         //[UserSliderCode_StereoWidthSlider] -- add your slider handling code here..
-        //[/UserSliderCode_StereoWidthSlider]
+		processor.StereoWidth = StereoWidthSlider->getValue(); //assign value of slider
+		//[/UserSliderCode_StereoWidthSlider]
     }
 
     //[UsersliderValueChanged_Post]
@@ -235,7 +238,7 @@ void MidSideUtilityAudioProcessorEditor::comboBoxChanged (ComboBox* comboBoxThat
     if (comboBoxThatHasChanged == InputComboBox.get())
     {
         //[UserComboBoxCode_InputComboBox] -- add your combo box handling code here..
-        //[/UserComboBoxCode_InputComboBox]
+		//[/UserComboBoxCode_InputComboBox]
     }
     else if (comboBoxThatHasChanged == OutputComboBox.get())
     {
@@ -255,12 +258,14 @@ void MidSideUtilityAudioProcessorEditor::buttonClicked (Button* buttonThatWasCli
     if (buttonThatWasClicked == LeftPhasetoggleButton.get())
     {
         //[UserButtonCode_LeftPhasetoggleButton] -- add your button handler code here..
-        //[/UserButtonCode_LeftPhasetoggleButton]
+        
+		//[/UserButtonCode_LeftPhasetoggleButton]
     }
     else if (buttonThatWasClicked == RightPhasetoggleButton.get())
     {
         //[UserButtonCode_RightPhasetoggleButton] -- add your button handler code here..
-        //[/UserButtonCode_RightPhasetoggleButton]
+        
+		//[/UserButtonCode_RightPhasetoggleButton]
     }
 
     //[UserbuttonClicked_Post]

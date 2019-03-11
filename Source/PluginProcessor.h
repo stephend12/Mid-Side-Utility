@@ -64,7 +64,6 @@ public:
 	bool Left_MidPhase; // Store Left Phase Value
 	bool Right_SidePhase; // Store Right Phase Value
 
-
 private:
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MidSideUtilityAudioProcessor)
