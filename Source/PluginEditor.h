@@ -34,7 +34,10 @@
     Describe your class and how it works here!
                                                                     //[/Comments]
 */
-class MidSideUtilityAudioProcessorEditor  : public AudioProcessorEditor
+class MidSideUtilityAudioProcessorEditor  : public AudioProcessorEditor,
+                                            public Slider::Listener,
+                                            public ComboBox::Listener,
+                                            public Button::Listener
 {
 public:
     //==============================================================================
@@ -47,15 +50,30 @@ public:
 
     void paint (Graphics& g) override;
     void resized() override;
+    void sliderValueChanged (Slider* sliderThatWasMoved) override;
+    void comboBoxChanged (ComboBox* comboBoxThatHasChanged) override;
+    void buttonClicked (Button* buttonThatWasClicked) override;
 
 
 
 private:
     //[UserVariables]   -- You can add your own custom variables in this section.
 	MidSideUtilityAudioProcessor& processor; //Allows access the processor class members.
-	//[/UserVariables]
+    //[/UserVariables]
 
     //==============================================================================
+    std::unique_ptr<Slider> InputGainSlider;
+    std::unique_ptr<Slider> Left_MidPanSlider;
+    std::unique_ptr<Slider> Right_SidePanSlider;
+    std::unique_ptr<Slider> StereoWidthSlider;
+    std::unique_ptr<Label> InputGainLabel;
+    std::unique_ptr<Label> Left_MidPanLabel;
+    std::unique_ptr<Label> Right_SidePanLabel;
+    std::unique_ptr<Label> StereoWidthLabel;
+    std::unique_ptr<ComboBox> InputComboBox;
+    std::unique_ptr<ComboBox> OutputComboBox;
+    std::unique_ptr<ToggleButton> LeftPhasetoggleButton;
+    std::unique_ptr<ToggleButton> RightPhasetoggleButton;
 
 
     //==============================================================================
